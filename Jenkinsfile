@@ -14,6 +14,19 @@ pipeline {
                      sh 'docker build -t todo-node-app .'
                  }
             }
+          // stage('Docker Login'){
+            
+           // steps {
+             //    withCredentials([string(credentialsId: 'Dockerid', variable: 'Dockerpwd')]) {
+               //     sh "docker login -u sutarrahul -p ${Dockerpwd}"
+           //     }
+         //   }                
+     //   }
+        // stage('Docker Push'){
+           // steps {
+             //   sh 'docker push sutarrahul/springboot:12.2.0-alpine'
+          //  }
+      //  }
           stage('Run docker container') { 
                  steps { 
                      sh 'docker run -itd --name nodejs_app -p 8000:8000 todo-node-app'
