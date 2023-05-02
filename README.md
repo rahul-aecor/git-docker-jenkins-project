@@ -1,9 +1,8 @@
 # git-docker-jenkins-project
-## sudo apt install nodejs
+## Required Installation
 
-## sudo apt install npm
-
-## npm install
-
-## node app.js
+sudo apt install nodejs
+sudo apt install npm
+npm install
+node app.js
 
