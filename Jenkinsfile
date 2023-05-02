@@ -5,8 +5,8 @@ pipeline {
       stages{  
             stage('Remove old container') { 
                steps { 
-                   sh 'docker rm -f nodejs_app'
-                  //    sh 'echo remove old container'
+                  // sh 'docker rm -f nodejs_app'
+                      sh 'echo remove old container'
                }
             }
             stage('Build docker container') { 
